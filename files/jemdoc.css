@@ -120,7 +120,7 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+	color: rgb(0,0,255);
 	text-decoration: none;
 }
 
