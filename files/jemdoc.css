@@ -3,8 +3,8 @@
 /* Menu */
 
 .menu {
-	/* background-color: #527bbd; */
-	background-color: #224b8d;
+	background-color: rgb(250,0,255);
+	/* background-color: #224b8d;*/
     left: 0;
     top: 0;
     width: 100%;
@@ -25,12 +25,12 @@
 }
 
 .menu a:link {
-	color: rgb(240,240,240);
+	color: rgb(140,140,140);
 	/*color: #9e9e9e;*/
 }
 
 .menu a:visited {
-	color: rgb(240,240,240);
+	color: rgb(140,140,240);
 	/*color: #9e9e9e;*/
 }
 
@@ -121,6 +121,16 @@ pre, tt {
 
 a, a > tt {
 	color: rgb(0,0,255);
+	text-decoration: none;
+}
+
+a.p1 {
+	color: rgb(255 0 0);
+	text-decoration: none;
+}
+
+a.p2 {
+	color: rgb(0 255 0);
 	text-decoration: none;
 }
 
