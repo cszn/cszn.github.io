@@ -2,6 +2,45 @@
 
 /* Menu */
 
+.top-menu {
+	background: #ffffff;
+	border-bottom: 1px solid #e5e5e5;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 13px 0px;
+	text-align: center;
+	position: fixed;
+	z-index: 200;
+}
+
+.top-menu a {
+	color: #444444;
+	font-size: 95%;
+	font-weight: 500;
+	padding: 0.25ex 4.5ex;
+	text-decoration: none;
+	transition: .2s;
+}
+
+.top-menu a:link,
+.top-menu a:visited {
+	color: #444444;
+}
+
+.top-menu a.news-link,
+.top-menu a.news-link:link,
+.top-menu a.news-link:visited {
+	color: rgb(178, 34, 34);
+}
+
+.top-menu a:hover,
+.top-menu a:active {
+	color: #8b1f1f;
+	text-decoration: none;
+}
+
 .menu {
 	background-color: rgb(250,0,255);
 	/* background-color: #224b8d;*/
