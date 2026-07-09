@@ -458,59 +458,39 @@ img.proj_thumb {
 	padding: 1px;
 }
 
-.research-topics {
-	display: grid;
-	grid-template-columns: repeat(5, minmax(0, 1fr));
-	gap: 14px;
-	margin: 0.9em 0 1.1em;
-}
-
-.topic-card {
-	background: #ffffff;
-	border: 1px solid #d9dee7;
-	overflow: hidden;
-}
-
-.topic-card img {
-	display: block;
-	width: 100%;
-	aspect-ratio: 16 / 9;
-	object-fit: cover;
-	background: #f4f6f8;
-}
-
-.topic-card p {
-	box-sizing: border-box;
-	min-height: 4.8em;
-	margin: 0;
-	padding: 9px 8px 10px;
-	color: #222222;
-	font-size: 13px;
-	font-weight: 600;
-	line-height: 1.25;
-	text-align: center;
-}
-
 .typical-tasks-heading {
-	margin: 1.25em 0 0.65em;
-	color: #222222;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 1.35em 0 0.75em;
+	color: #1f2937;
 	font-size: 15px;
 	font-weight: 700;
 	letter-spacing: 0;
 }
 
+.typical-tasks-heading:after {
+	content: "";
+	flex: 1;
+	border-top: 1px solid #e1e5ec;
+}
+
 .typical-tasks {
-	display: grid;
-	grid-template-columns: repeat(5, minmax(0, 1fr));
-	gap: 14px;
-	margin: 0 0 1.25em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 18px 16px;
+	margin: 0.05em 0 1.45em;
 }
 
 .task-card {
+	box-sizing: border-box;
+	flex: 0 0 calc((100% - 48px) / 4);
+	max-width: calc((100% - 48px) / 4);
 	background: #ffffff;
 	border: 1px solid #d9dee7;
 	border-radius: 6px;
-	box-shadow: 0 8px 20px rgba(18, 43, 109, 0.07);
+	box-shadow: 0 7px 18px rgba(18, 43, 109, 0.075);
 	overflow: hidden;
 }
 
@@ -520,12 +500,16 @@ img.proj_thumb {
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
 	background: #f4f6f8;
+	border-bottom: 1px solid #edf0f5;
 }
 
 .task-body {
 	box-sizing: border-box;
-	min-height: 3.3em;
-	padding: 11px 8px 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 3.1em;
+	padding: 10px 10px 11px;
 }
 
 .task-title {
@@ -538,16 +522,16 @@ img.proj_thumb {
 }
 
 @media (max-width: 760px) {
-	.research-topics,
-	.typical-tasks {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+	.task-card {
+		flex-basis: calc((100% - 16px) / 2);
+		max-width: calc((100% - 16px) / 2);
 	}
 }
 
 @media (max-width: 480px) {
-	.research-topics,
-	.typical-tasks {
-		grid-template-columns: 1fr;
+	.task-card {
+		flex-basis: 100%;
+		max-width: 100%;
 	}
 }
 
